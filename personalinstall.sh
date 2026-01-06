@@ -1,5 +1,7 @@
 #!/bin/bash
 
+setfont cyr-sun16
+
 # Время
 ln -sf /usr/share/zoneinfo/Asia/Tomsk /etc/localtime
 hwclock --systohc
@@ -29,7 +31,7 @@ echo "Введите пароль $username"
 passwd $username
 
 # Пакеты
-pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl alsa pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr reflector "
+pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr reflector tree-sitter-cli "
 pockets_btrfs="grub-btrfs btrfs-progs timeshift"
 
 usebtrfs=""
