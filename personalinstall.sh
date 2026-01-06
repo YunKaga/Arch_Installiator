@@ -29,7 +29,7 @@ echo "Введите пароль $username"
 passwd $username
 
 # Пакеты
-pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl alsa pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr "
+pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl alsa pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr reflector "
 pockets_btrfs="grub-btrfs btrfs-progs timeshift"
 
 usebtrfs=""
@@ -46,6 +46,8 @@ get_btr() {
   fi
 }
 get_btr
+
+reflector -c Russia -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 chsh -s /bin/zsh $username
 
