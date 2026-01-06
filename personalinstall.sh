@@ -39,7 +39,7 @@ reflector -c Russia -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 sed -i "s/ParallelDownloads = 5/ParallelDownloads = 15/" /etc/pacman.conf
 
-pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr tree-sitter-cli eza duf "
+pockets_base="hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch curl nodejs yarn sddm grub efibootmgr tree-sitter-cli eza duf wl-clipboard "
 pockets_btrfs="grub-btrfs btrfs-progs timeshift"
 
 usebtrfs=""
